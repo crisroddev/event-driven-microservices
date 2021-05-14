@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "wiki-satck"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1c2s1hg4l2l8o"
+s3_prefix = "wiki-satck"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["HelloWorldFunction=438569415701.dkr.ecr.us-east-1.amazonaws.com/wikirepo"]
